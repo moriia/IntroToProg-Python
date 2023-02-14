@@ -11,7 +11,7 @@
 
 # -- Data -- #
 # declare variables and constants
-strFileName = "ToDoList.txt"   # An object that represents a file
+objFile = "ToDoList.txt"   # An object that represents a file
 strData = ""  # A row of text data from the file
 dicRow = {}    # A row of data separated into elements of a dictionary {Task,Priority}
 lstTable = []  # A list that acts as a 'table' of rows
@@ -22,7 +22,7 @@ strChoice = "" # A Capture the user option selection
 # -- Processing -- #
 # Step 1 - When the program starts, load the any data you have
 # in a text file called ToDoList.txt into a python list of dictionaries rows (like Lab 5-2)
-objFile = open (strFileName, 'w')
+objFile = open ("ToDoList.txt", 'w')
 dicRow = {"task": "Do homework" , "priority":"Medium"}
 lstTable.append(dicRow)
 objFile.write(dicRow["task"]+','+dicRow["priority"]+'\n')
@@ -66,7 +66,7 @@ while True:
        continue
     # Step 6 - Save tasks to the ToDoToDoList.txt file
     elif strChoice.strip() == '4':
-        objFile = open(strFileName, 'w')
+        objFile = open("ToDoList.txt", 'w')
         for dicRow in lstTable:
             objFile.write(dicRow["task"] + ',' + dicRow["priority"] + '\n')
         objFile.close()
