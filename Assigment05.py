@@ -76,3 +76,6 @@ while True:
     elif strChoice.strip() == '5':
         print("See you next time \nProgram finished\n")
         exit()  # Exit the program
+    else: 
+        print("Please enter one of next options ['1' or '2' or '3' or '4' or '5']")
+        continue
