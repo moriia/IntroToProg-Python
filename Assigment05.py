@@ -61,8 +61,8 @@ while True:
     elif strChoice.strip() == '3':
        if len(lstTable) == 0: print("The table is empty\n")
        else:
-           print("The last added item removed\n")
            del lstTable[-1]
+           print("The last added item removed\n")
        continue
     # Step 6 - Save tasks to the ToDoToDoList.txt file
     elif strChoice.strip() == '4':
